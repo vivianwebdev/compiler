@@ -1,0 +1,49 @@
+Snk_Begin $                        $$ Program starts here
+
+Snk_Int a, b, c $                  $$ Declare integers a, b, c
+Snk_Reel pi, radius $              $$ Declare real numbers pi and radius
+Snk_String "Welcome to Snake!" $   $$ Declare a string literal
+
+Set a 5 $                          $$ Assign integer value 5 to a
+Set b 10 $                         $$ Assign integer value 10 to b
+Set pi 3.14159 $                   $$ Assign real value 3.14159 to pi
+
+Snk_Print "Snake Compiler Demonstration" $  $$ Print a message
+Snk_Print "The value of a is:" $             
+Snk_Print a $                      $$ Print the value of a
+
+$$ This is a comment explaining the next step $$
+Set c 15 $                         $$ Assign integer value 15 to c
+Snk_Print "The sum of a and b is:" $
+Snk_Print a, b, c $                $$ Print multiple variables
+
+If [a < b] $                       $$ Conditional check: if a is less than b
+    Snk_Print "a is less than b" $
+End $                              $$ End of the conditional block
+
+Snk_Reel area $                    $$ Declare a new real variable
+Set radius 10 $                    $$ Assign value to radius
+Set area pi $                      $$ Assign pi to area (semantic type check)
+Snk_Print "The radius is:" $
+Snk_Print radius $                 $$ Print the value of radius
+
+Begin $                            $$ Start a nested block
+    Set area 3.14159 $             $$ Assign pi to area
+    Snk_Print "Inside the block: Calculating area" $
+    Snk_Print area $               $$ Print area inside the block
+End $                              $$ End of the nested block
+
+Get b From a $                     $$ Assign the value of a to b
+Snk_Print "Value of b after Get:" $
+Snk_Print b $
+
+If [b > a] $                       $$ Another condition
+    Snk_Print "b is now greater than a" $
+    If [b / 2 > a] $               $$ Nested condition with arithmetic check
+        Snk_Print "Half of b is still greater than a" $
+    End $
+End $
+
+Snk_Print "Goodbye from Snake!" $  $$ Final message
+
+Snk_End $                          $$ Program ends here

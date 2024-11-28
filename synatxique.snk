@@ -1,0 +1,11 @@
+Snk_Begin
+Snk_Reel x2 $
+Snk_Int k $
+Set x1 3
+Set k 5$
+Get x1 From $
+Snk_Print "hello" $
+Snk_Print i,j 
+$$ commentaire
+If[x1/5]
+Snk_End

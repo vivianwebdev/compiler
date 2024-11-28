@@ -1,0 +1,12 @@
+Snk_Begin
+x1
+5 + 3.14
+Set x
+$$ hello
+If [d<5]
+Snk_Int t1,t2 $
+Snk_Real k $
+Begin
+Snk_Print x5 $
+end
+Snk_End
